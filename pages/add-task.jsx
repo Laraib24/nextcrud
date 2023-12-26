@@ -10,7 +10,7 @@ export default function AddPost() {
 		e.preventDefault();
 		console.log(title, content);
 		try {
-			fetch('./api/add-task/route', {
+			fetch('/api/add-task', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
